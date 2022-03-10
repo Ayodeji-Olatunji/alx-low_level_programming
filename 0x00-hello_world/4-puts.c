@@ -1,10 +1,10 @@
 #include <stdio.h>
-
-/** Entry point - main()
+/**
+ * main - Entry point
  *
- * Description: prints the string "Programming is like building a multilingual puzzle"
+ * Description: prints "Programming is like building a multilingual puzzle"
  *
- * Returns 0
+ * Return: 0
  */
 int main(void)
 {
