@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include <unistd.h>
 /**
  * main - Entry point
  *
- * Description: prints a given string of text
+ * Description: prints a given string of text to the standard error
  *
  * Return: 0
  */
