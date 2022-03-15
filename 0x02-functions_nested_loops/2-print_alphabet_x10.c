@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * main - Function that prints lowercase alphabets 10x
+ * print_alphabet_x10 - prints alphabets 10x times
  *
- *Description: function that prints lowercase alphabets 10x
+ * Description: function that prints lowercase alphabets 10x
  *
- *Return: Always 0 (success)
+ * Return: void
  *
  */
 void print_alphabet_x10(void)
@@ -20,6 +20,6 @@ void print_alphabet_x10(void)
 		}
 		i++;
 
-		-putchar('\n');
+		_putchar('\n');
 	}
 }
