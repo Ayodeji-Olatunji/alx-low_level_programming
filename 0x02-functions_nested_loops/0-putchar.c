@@ -8,10 +8,10 @@
  */
 int main(void)
 {
-	char input[6] = "Hello";
+	char input[9] = "_putchar";
 	int n = 0;
 
-	for (n = 0; n < 6; n++)
+	for (n = 0; n < 8; n++)
 	{
 		_putchar(input[n]);
 	}
