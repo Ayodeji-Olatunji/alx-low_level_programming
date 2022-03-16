@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	unsigned long long int sum, first, second, count;
+	unsigned long int sum, first, second, count;
 
 	sum = 0;
 	first = 0;
@@ -16,14 +16,14 @@ int main(void)
 	while (count < 98)
 	{
 		sum = first + second;
-		printf("%llu, ", sum);
+		printf("%lu, ", sum);
 		first = second;
 		second = sum;
 		count++;
 	}
 
 	sum = first + second;
-	printf("%llu\n", sum);
+	printf("%lu\n", sum);
 
 	return (0);
 }
