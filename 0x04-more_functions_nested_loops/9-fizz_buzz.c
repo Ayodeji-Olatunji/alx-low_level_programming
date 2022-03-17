@@ -6,9 +6,9 @@
  */
 int main(void)
 {
-	int n = 1;
+	int n;
 
-	while (n < 101)
+	for (n = 1; n < 101; n++)
 	{
 		if (n % 3 == 0 && n % 5 == 0)
 		{
@@ -33,8 +33,6 @@ int main(void)
 		{
 			printf("%d ", n);
 		}
-
-		n++;
 	}
 	printf("\n");
 
