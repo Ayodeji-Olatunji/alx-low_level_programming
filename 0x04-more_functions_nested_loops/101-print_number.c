@@ -27,41 +27,16 @@ int power(int base, int exp)
  */
 void print_number(int n)
 {
-	int negative = 0;
-	int digit;
-	int divisor;
-	int begin = 0;
-	int place = 10;
+	unsigned int i = n;
 
 	if (n < 0)
 	{
-		negative = 1;
-		n = n * -1;
+		_putchar(45);
+		i = -i;
 	}
-	while (place >= 0)
+	if (i / 10)
 	{
-		divisor = power(10, place);
-		digit = ((n / divisor) % 10);
-		if (digit == 0 && begin == 0)
-		{
-			place--;
-		}
-		else if (digit != 0 && begin == 0)
-		{
-			begin = 1;
-			if (negative == 1)
-				_putchar('-');
-			_putchar('0' + digit);
-			place--;
-		}
-		else
-		{
-			_putchar('0' + digit);
-			place--;
-		}
+		print_number(i / 10);
 	}
-	if (digit == 0 && divisor == 1)
-	{
-		_putchar(48);
-	}
+	_putchar(i % 10 + '0');
 }
