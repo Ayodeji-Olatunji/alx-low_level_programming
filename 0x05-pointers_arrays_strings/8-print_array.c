@@ -14,7 +14,7 @@ void print_array(int *a, int n)
 
 	i = 0;
 	count = 1;
-	
+
 	if (n < 0)
 	{
 		n = 0;
