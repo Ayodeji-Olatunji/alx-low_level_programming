@@ -23,11 +23,11 @@ void print_array(int *a, int n)
 	{
 		while (a[i] != '\0' && count < n)
 		{
-			printf("%d, \n", a[i]);
+			printf("%lu, ", a[i]);
 			i++;
 			count++;
 
 		}
-		printf("%d\n", a[i]);
+		printf("%lu\n", a[i]);
 	}
 }
