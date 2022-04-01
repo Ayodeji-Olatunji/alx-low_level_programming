@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * is_number - checks if the argument is a number
  * @s: the parameter to check
