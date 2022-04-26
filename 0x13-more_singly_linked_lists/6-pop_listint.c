@@ -4,7 +4,7 @@
  * @head: head of linked list
  * Return: node data (integer)
  */
-int pop_listint(listint_T **head)
+int pop_listint(listint_t **head)
 {
 	listint_t *temp;
 	int n;
