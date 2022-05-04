@@ -38,10 +38,10 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 		error_handler(97, "Usage: cp file_from file_to\n", 'N');
-	fd_s = open(argv[1], 0_RDONLY);
+	fd_s = open(argv[1], O_RDONLY);
 	if (fd_s == -1)
 		error_handler(98, "Error: Can't read from file %s\n", 's', argv[1]);
-	fd_d = open(argv[2], 0_CREAT | 0_WRONLY | 0_TRUNC, 0664);
+	fd_d = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (fd_d == -1)
 		error_handler(99, "Error: Can't write to %s\n", 's', argv[2]);
 
