@@ -1,22 +1,22 @@
 #include "main.h"
 /**
  * _abs - prints the absolute value of a number
- * @r: r is an integer
+ * @n: n is an integer
  *
  * Return: integer
  */
-int _abs(int r)
+int _abs(int n)
 {
-	if (r > 0)
+	if (n > 0)
 	{
-		return (r);
+		return (n);
 	}
-	else if (r < 0)
+	else if (n < 0)
 	{
-		return (-r);
+		return (-n);
 	}
 	else
 	{
-		return (r);
+		return (n);
 	}
 }
